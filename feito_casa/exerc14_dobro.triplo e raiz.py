@@ -1,0 +1,6 @@
+n=int(input('digite um numero: '))
+d=int(n*2)
+t=int(n*3)
+r=float(n**(1/2))
+print('='*100)
+print('o numero %d tem como seu dobro o %d e seu triplo é %d e a raiz quadrada é %.2f'%(n,d,t,r))

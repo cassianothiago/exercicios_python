@@ -1,0 +1,10 @@
+n1=float(input('digite o primeiro numero: '))
+n2=float(input('digite o segundo numero: '))
+s=int(n1+n2)
+m=int(n1*n2)
+d=float(n1/n2)
+di=float(n1//n2)
+e=float(n1**n2)
+r=float(n1**(1/n2))
+        
+print('a soma é %d, a multiplicação é %d a divisão é %.2f a divisão interia é %.2f o expoente é %.2f e a raiz é %.2f'%(s,m,d,di,e,r))
