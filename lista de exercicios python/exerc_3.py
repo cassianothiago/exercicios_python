@@ -26,11 +26,12 @@ while salario<=0:
     print('favor digitar um salario maior que zero. Digite novamente!')
     salario=float(input('digite salario: '))
 
-print('='*120)
-#sexo=input('digite seu genero; M para masculino ou F para feminino: ')
-#while sexo!='M' or sexo!='F' or sexo!='m' or sexo!='f':
-    #print('genero inválido. Favor digitar novamente!')
-    #sexo=input('digite M para masculino ou F para feminino: ')
-#print(sexo)
+"""print('='*120)
+sexo=input('digite seu genero; M para masculino ou F para feminino: ')
+while sexo!='M' or sexo!='F' or sexo!='m' or sexo!='f':
+    print('genero inválido. Favor digitar novamente!')
+    sexo=input('digite M para masculino ou F para feminino: ')
+print(sexo)
 
+print('='*120)"""
 print('='*120)
