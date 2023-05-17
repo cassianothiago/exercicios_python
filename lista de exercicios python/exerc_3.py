@@ -38,3 +38,4 @@ if sexo=='M':
 elif sexo=='F':
     print('genero feminino')
 print('='*120)
+print('.')
