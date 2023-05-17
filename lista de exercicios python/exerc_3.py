@@ -32,5 +32,9 @@ sexo=(input('digite seu genero; M para masculino ou F para feminino: '))
 while (sexo!='M') and (sexo!='F') and (sexo!='m') and (sexo!='f'):
     print('genero inválido. Favor digitar novamente!')
     sexo=input('digite M para masculino ou F para feminino: ')
-print(sexo)
+sexo=sexo.capitalize()
+if sexo=='M':
+    print('genero masculino')
+elif sexo=='F':
+    print('genero feminino')
 print('='*120)
