@@ -3,6 +3,6 @@ print('='*120)
 cont=0
 while cont<50:
     cont=cont+1
-    print(cont%2!=0,end=', ')
+    print(cont/2!=0,end=(' ,'))
+print('')
 print('='*120)
-
