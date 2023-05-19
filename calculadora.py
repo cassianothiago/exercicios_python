@@ -1,6 +1,6 @@
 import os
 while True:
-    print('='*120)
+    print('='*200)
     print('======== Calculadora em python =========')
     a=int(input('digite 1 para soma 2 para divisão 3 para multiplicação 4 para subtração 5 para volume do cubo 6 para potenciação 7 para raiz 8 para area do quadrado 9 para media e 10 para fatorial ou zero para sair: '))
     print('='*120)
@@ -65,11 +65,11 @@ while True:
         print('bem vindo ao fatorial')
         fat=int(input('digite o numero: '))
         cont=1
-        result=1
+        z=1
         while cont<fat:
             cont=cont+1
-            result=cont*result
-        print(result)
+            result=cont*z
+        print(z)
     os.system('pause')
     os.system('cls')
-print('='*120)    
+print('='*200)    
