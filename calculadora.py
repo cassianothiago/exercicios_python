@@ -44,9 +44,9 @@ while True:
         print(pot)
     elif a==7:
         print('bem vindo a raiz quadratica')
-        raiz=('digite o numero: ')
+        raiz=float(input('digite o numero: '))
         r=(1/2)
-        squad=raiz**(1/2)
+        squad=raiz**r
         print(squad)
     elif a==8:
         print('bem vindo a area do quadrado')
