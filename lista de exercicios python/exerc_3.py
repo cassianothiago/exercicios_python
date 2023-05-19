@@ -29,7 +29,7 @@ while salario<=0:
 print('='*120)
 sexo=(input('digite seu genero; M para masculino ou F para feminino: '))
 
-#and 
+#or 
 while (sexo!='M') and (sexo!='F') and (sexo!='m') and (sexo!='f'):
     print('genero inválido. Favor digitar novamente!')
     sexo=input('digite M para masculino ou F para feminino: ')
