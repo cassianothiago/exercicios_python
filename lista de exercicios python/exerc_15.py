@@ -1,7 +1,7 @@
 15.	#Faça um programa que peça 10 números inteiros, calcule e mostre a quantidade de números pares e a quantidade de números ímpares
 
 print('='*120)
-a=int(input('digite um numero: '))
+'''a=int(input('digite um numero: '))
 b=int(input('digite um numero: '))
 c=int(input('digite um numero: '))
 d=int(input('digite um numero: '))
@@ -27,4 +27,21 @@ cont=0
 while cont<10:
     cont=cont+1
     if lista[cont]%2==0:
-        print(lista[cont])
+        print(lista[cont])'''
+cont=0
+par=0
+impar=0
+numpar=[]
+while cont<10:
+    cont+=1
+    a=int(input('digite um numero: '))
+    if a%2==0:
+        par=par+1
+        numpar.append(a)
+        
+    else:
+        impar=impar+1
+        
+print(par)
+print(numpar)
+
