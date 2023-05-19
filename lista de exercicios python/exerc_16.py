@@ -10,9 +10,9 @@ fb1=1
 while n<2:
     n=int(input('valor de n tem que ser maior ou iqual a 2. Digite novamente: '))
 if n==2:
-    print('{}, {}'.format(1,2))
+    print('{}, {}, {}'.format(1,1,2))
 elif n==3:
-    print('{}, {}, {}'.format(1,2,3))
+    print('{}, {}, {}, {}'.format(1,1,2,3))
 else:
     print(1)
     print(1)
