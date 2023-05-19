@@ -1,2 +1,2 @@
-a=('Ederson Roberto Costa')
-print(a.count('a'))
+a=int(input('digite: '))
+print(a.count(a))
