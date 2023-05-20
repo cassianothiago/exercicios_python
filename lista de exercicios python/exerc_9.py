@@ -1,5 +1,5 @@
 #Faça um programa que imprima na tela apenas os números ímpares entre 1 e 50.
-
+import os
 print('='*120)
 cont=0
 while cont<50:
@@ -8,3 +8,5 @@ while cont<50:
         print(cont,end=(', '))
 print('')
 print('='*120)
+os.system('pause')
+
