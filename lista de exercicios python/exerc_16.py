@@ -4,8 +4,8 @@ print('='*120)
 print('F(n+1)=Fn+(Fn-1), n>=2 (formula da sequência de Fibonacci)')
 n=int(input('digite o valor de n para a sequencia de Fibonacci. (n tem que ser maior ou iqual a 2): '))
 cont=0
-fb=1
-fb1=1
+ult=1
+pen=1
 
 while n<2:
     n=int(input('valor de n tem que ser maior ou iqual a 2. Digite novamente: '))
@@ -18,8 +18,8 @@ else:
     print(1)
     while cont<n-2:
         cont=cont+1
-        a=fb+fb1
-        fb1=fb
-        fb=a
-        print(a)
+        prox=ult+pen
+        ult=pen
+        pen=prox
+        print(prox)
 print('='*120)

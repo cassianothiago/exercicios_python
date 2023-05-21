@@ -10,17 +10,16 @@ while True:
     elif a==1:
         temp=float(input('Digite a temperatura em Celsius: '))
         f=temp*1.8+32
-        print('A temperatura de {}º Celsius é iqual a {}º Fahrenheit'.format(temp,f))
+        print('A temperatura de {}º Celsius é iqual a {:.2f}º Fahrenheit'.format(temp,f))
         print('='*55)
         print('Obrigado por usar o conversor de temperatura')
     elif a==2:
         temp=float(input('Digite a temperatura em Fahrenheit: '))
         c=(temp-32)/1.8
-        print('A temperatura de {}º Fahrenheit é iqual a {}º Celsius'.format(temp,c))
+        print('A temperatura de {}º Fahrenheit é iqual a {:.2f}º Celsius'.format(temp,c))
         print('='*55)
         print('Obrigado por usar o conversor de temperatura')
     else:
         print('Número digitado inválido. Favor digitar 1 ou 2 ou 0!')      
     os.system('pause')
     os.system('cls')
-print('='*120)

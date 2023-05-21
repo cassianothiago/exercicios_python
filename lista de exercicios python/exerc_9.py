@@ -9,4 +9,3 @@ while cont<50:
 print('')
 print('='*120)
 os.system('pause')
-
