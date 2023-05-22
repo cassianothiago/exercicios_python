@@ -91,8 +91,6 @@ while True:
     if op=='2':     
         mat=int(input("Digite a matrícula: "))
         
-        print(lista_matricula(mat-1),lista_nome(mat-1),lista_sobrenome(mat-1),lista_rua(mat-1),lista_bairro(mat-1),lista_cidade(mat-1),lista_estado(mat-1),lista_CEP(mat-1),lista_pais(mat-1),lista_tel(mat-1),lista_CPF(mat-1),lista_peso(mat-1),lista_altura(mat-1),lista_idade(mat-1),lista_cart(mat-1),lista_email(mat-1),lista_not1(mat-1),lista_not2(mat-1),lista_not3(mat-1),lista_not4(mat-1),lista_media(mat-1),lista_classe(mat-1),lista_serie(mat-1),lista_cor(mat-1))
-        os.system('pause')
-    os.system('pause')
+        print(lista_matricula[mat-1],lista_nome[mat-1],lista_sobrenome[mat-1],lista_rua[mat-1],lista_bairro[mat-1],lista_cidade[mat-1],lista_estado[mat-1],lista_CEP[mat-1],lista_pais[mat-1],lista_tel[mat-1],lista_CPF[mat-1],lista_peso[mat-1],lista_altura[mat-1],lista_idade[mat-1],lista_cart[mat-1],lista_email[mat-1],lista_not1[mat-1],lista_not2[mat-1],lista_not3[mat-1],lista_not4[mat-1],lista_media[mat-1],lista_classe[mat-1],lista_serie[mat-1],lista_cor[mat-1])
 os.system('pause')
 
