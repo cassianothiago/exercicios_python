@@ -31,7 +31,7 @@ lista_cor=[]
 
 print('cadastro de aluno')
 while True:
-    op=input("digite 1  para cadastro 2 para consulta 0 sair: ")
+    op=input("digite 1 para cadastro 2 para consulta 0 sair: ")
     if op=='0':           
         break
 
