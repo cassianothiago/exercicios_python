@@ -4,7 +4,7 @@ cont=0
 while cont<=num:
     cont=+1
     div=num%cont
-    if div==0:
+    if div<=num or cont<2:
         print(div)
         
         break
