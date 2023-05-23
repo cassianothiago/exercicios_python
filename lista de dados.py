@@ -37,8 +37,8 @@ while True:
 
     if op=='1':           
         cont=cont+1
-        nome=input('digite seu nome: ')
         matricula=cont
+        nome=input('digite seu nome: ')
         sobrenome=input('digite seu sobrenome: ')
         rua=input('digite nome da rua: ')
         bairro=input('digite seu bairro: ')
@@ -61,6 +61,10 @@ while True:
         serie=int(input('digite sua série: '))
         classe=(input('digite sua classe: '))
         sexo=(input('digite m para masculino e f para feminino: '))
+        if sexo=='M' or 'm':
+            sexo=='Masculino'
+        else:
+            sexo=='Feminino'
         cor=(input('digite sua cor: '))
         lista_nome.append(nome)
         lista_sobrenome.append(sobrenome)
@@ -87,11 +91,8 @@ while True:
         lista_sexo.append(sexo)
         lista_cor.append(cor)
         lista_matricula.append(matricula)
-
     if op=='2':     
         mat=int(input("Digite a matrícula: "))
         
         print(lista_matricula[mat-1],lista_nome[mat-1],lista_sobrenome[mat-1],lista_rua[mat-1],lista_bairro[mat-1],lista_cidade[mat-1],lista_estado[mat-1],lista_CEP[mat-1],lista_pais[mat-1],lista_tel[mat-1],lista_CPF[mat-1],lista_peso[mat-1],lista_altura[mat-1],lista_idade[mat-1],lista_cart[mat-1],lista_email[mat-1],lista_not1[mat-1],lista_not2[mat-1],lista_not3[mat-1],lista_not4[mat-1],lista_media[mat-1],lista_classe[mat-1],lista_serie[mat-1],lista_cor[mat-1])
-
 os.system('pause')
-
