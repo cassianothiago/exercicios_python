@@ -61,10 +61,6 @@ while True:
         serie=int(input('digite sua série: '))
         classe=(input('digite sua classe: '))
         sexo=(input('digite m para masculino e f para feminino: '))
-        if sexo=='M' or 'm':
-            sexo=='Masculino'
-        else:
-            sexo=='Feminino'
         cor=(input('digite sua cor: '))
         lista_nome.append(nome)
         lista_sobrenome.append(sobrenome)
