@@ -31,11 +31,11 @@ lista_cor=[]
 
 print('cadastro de aluno')
 while True:
-    op=input("digite 1 para cadastro 2 para consulta 0 sair: ")
+    op=input("digite 1 para cadastro 2 para consulta 3 para deletar matricula e 0 sair: ")
     if op=='0':           
         break
 
-    if op=='1':           
+    elif op=='1':           
         cont=cont+1
         matricula=cont
         nome=input('digite seu nome: ')
@@ -87,8 +87,12 @@ while True:
         lista_sexo.append(sexo)
         lista_cor.append(cor)
         lista_matricula.append(matricula)
-    if op=='2':     
-        mat=int(input("Digite a matrícula: "))
         
-        print(lista_matricula[mat-1],lista_nome[mat-1],lista_sobrenome[mat-1],lista_rua[mat-1],lista_bairro[mat-1],lista_cidade[mat-1],lista_estado[mat-1],lista_CEP[mat-1],lista_pais[mat-1],lista_tel[mat-1],lista_CPF[mat-1],lista_peso[mat-1],lista_altura[mat-1],lista_idade[mat-1],lista_sexo[mat-1],lista_cart[mat-1],lista_email[mat-1],lista_not1[mat-1],lista_not2[mat-1],lista_not3[mat-1],lista_not4[mat-1],lista_media[mat-1],lista_classe[mat-1],lista_serie[mat-1],lista_cor[mat-1])
+    elif op=='2':     
+        mat=int(input("Digite a matrícula: "))
+        print('matricula: ',lista_matricula[mat-1],'nome:',lista_nome[mat-1],'sobrenome: ',lista_sobrenome[mat-1],'rua: ',lista_rua[mat-1],'bairro: ',lista_bairro[mat-1],'cidade: ',lista_cidade[mat-1],'estado: ',lista_estado[mat-1],'CEP: ',lista_CEP[mat-1],'país: ',lista_pais[mat-1],'telefone: ',lista_tel[mat-1],'CPF: ',lista_CPF[mat-1],'peso: ',lista_peso[mat-1],'altura: ',lista_altura[mat-1],'idade: ',lista_idade[mat-1],'Gênero: ',lista_sexo[mat-1],'Nº cartão: ',lista_cart[mat-1],'email: ',lista_email[mat-1],'nota 1: ',lista_not1[mat-1],'nota 2: ',lista_not2[mat-1],'nota 3: ',lista_not3[mat-1],'nota 4: ',lista_not4[mat-1],'media: ',lista_media[mat-1],'classe: ',lista_classe[mat-1],'serie: ',lista_serie[mat-1],'etnia: ',lista_cor[mat-1])
+    elif op=='3':
+        delete=int(input('Digite a matrícula a ser excluída: '))
+        del(lista_matricula[mat-1],lista_nome[mat-1],lista_sobrenome[mat-1],lista_rua[mat-1],lista_bairro[mat-1],lista_cidade[mat-1],lista_estado[mat-1],lista_CEP[mat-1],lista_pais[mat-1],lista_tel[mat-1],lista_CPF[mat-1],lista_peso[mat-1],lista_altura[mat-1],lista_idade[mat-1],lista_sexo[mat-1],lista_cart[mat-1],lista_email[mat-1],lista_not1[mat-1],lista_not2[mat-1],lista_not3[mat-1],lista_not4[mat-1],lista_media[mat-1],lista_classe[mat-1],lista_serie[mat-1],lista_cor[mat-1])
+        
 os.system('pause')
