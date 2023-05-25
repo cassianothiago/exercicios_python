@@ -5,13 +5,13 @@ print('='*120)
 num=int(input('digite um numero: '))
 cont=0
 lista=[]
-for x in range(1,num):
+for x in range(2,num):
     print('x=' ,x)
     if num%x==0:
         cont=cont+1
         lista.append(x)
 print('='*120)
-if cont==1:
+if cont==0:
     print('primo')
 else:
     print('não é primo e seus divisores são: ',lista)
