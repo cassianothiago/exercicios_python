@@ -6,12 +6,16 @@ print('cadstro da idade dos alunos da turma')
 print('='*120)
 cont=0
 soma=0
+cont2=0
 alunos=int(input('digite a quantidade de alunos matriculados: '))
 while cont<alunos:
     cont=cont+1
     idade=int(input('Digite a idade do aluno: '))
     soma=soma+idade
     media=soma/alunos
+    if idade>0 and idade<=25:
+        cont2=cont2+1
+print('quantidade de jovens é: ',cont2)
 print('='*120)
 print('A sala tem {} alunos e a média de idade é {}'.format(alunos,media))
 print('='*120)

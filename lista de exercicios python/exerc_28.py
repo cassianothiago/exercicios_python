@@ -2,22 +2,21 @@
 
 import os
 turmas=int(input('digite quantidade de turmas: '))
-cont=0
 soma=0
-lista=[]
-while cont<turmas:
-    cont=cont+1
-    print('cadastro da turma ',cont)
-    alunos=int(input('digite a quantidade de alunos da turma: '))
-    soma=soma+alunos
-    if alunos>40:
-        alunos==0
-        cont=cont-1
-        print('numero de alunos por turma não pode ser maior que 40')
-   
+cont=0
+for i in range(turmas):
     
-media=soma/turmas
-print('{:.2f} é média de alunos por turma '.format(media))
+    print('cadastro da turma ',i+1)
+    alunos=int(input('digite a quantidade de alunos da turma: '))
+    while alunos>40:
+        print('>40')
+        alunos=int(input('digite a quantidade de alunos da turma: '))
+
+    if alunos<40:
+        soma=soma+alunos
+        cont=cont+1
+
+print(soma)
 os.system('pause')
 
     
