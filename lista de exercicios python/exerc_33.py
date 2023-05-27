@@ -3,6 +3,7 @@ Ex.: 5!=5.4.3.2.1=120. A saída deve ser conforme o exemplo abaixo:
 a.	Fatorial de: 5
 b.	5! =  5 . 4 . 3 . 2 . 1 = 120'''
 
+import os
 print('='*120)
 a=int(input('a.  Fatorial de: '))
 lista=[]
@@ -13,3 +14,4 @@ for x in range(a):
     lista.append(c)
 print('b. ',a,'! = ',' . '.join(map(str,lista)),' = ',b)
 print('='*120)
+os.system('pause')
