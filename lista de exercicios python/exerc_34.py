@@ -19,7 +19,6 @@ while True:
 if lista!=0:
     print('a menor temperatura= ',min(lista))
     print('a maior temperaturra= ',max(lista))
-    print('soma de totas as temperaturas digitadas= ',sum(lista))
     print('a media das temperaturas= ',media)
 print('='*120)
 os.system('pause')
