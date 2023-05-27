@@ -7,6 +7,8 @@ print('='*120)
 cont=0
 soma=0
 cont2=0
+cont3=0
+cont4=0
 alunos=int(input('digite a quantidade de alunos matriculados: '))
 while cont<alunos:
     cont=cont+1
@@ -15,7 +17,13 @@ while cont<alunos:
     media=soma/alunos
     if idade>0 and idade<=25:
         cont2=cont2+1
+    if idade>25 and idade<=60:
+        cont3=cont3+1
+    else: 
+        cont4=cont4+1
 print('quantidade de jovens é: ',cont2)
+print('quantidade de adultos é: ',cont3)
+print('quantidade de idosos é: ',cont4)
 print('='*120)
 print('A sala tem {} alunos e a média de idade é {}'.format(alunos,media))
 print('='*120)

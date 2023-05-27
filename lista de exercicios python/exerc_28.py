@@ -3,7 +3,6 @@
 import os
 turmas=int(input('digite quantidade de turmas: '))
 soma=0
-cont=0
 for i in range(turmas):
     
     print('cadastro da turma ',i+1)
