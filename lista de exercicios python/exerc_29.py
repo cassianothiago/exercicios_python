@@ -3,10 +3,12 @@
 
 a=int(input('Quantos CDs tem na sua coleção: '))
 soma=0
+print('='*120)
 for x in range(a):
     print('qual foi o valor do ',x+1,'º CD?')
     valor=int(input('Valor: '))
     soma=soma+valor
+print('='*120)
 print('soma dos CDs = ',soma)
 media=soma/a
 print('media gasta por cd = ',media)
