@@ -9,6 +9,9 @@ for i in range(elet):
     print('vote conferme a legenda')
     print('1-votar em fulano \n2-votar em ciclano \n3-votar em beltrano')
     voto=int(input('digite seu voto: '))
+    while voto!=1 and voto!=2 and voto!=3:
+        print('candidato informado invalido. Favor repetir voto')
+        voto=int(input('digite seu voto: '))
     print('='*120)
     lista.append(voto)
     os.system('cls')
