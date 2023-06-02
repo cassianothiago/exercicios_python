@@ -10,6 +10,12 @@ while True:
     if temp=='x' or temp=='X':
         break
     mes=int(input('digite o mes que essa temp ocorreu: '))
+    
+    if mes<1 or mes>12:
+        print('mês invalido. Favor difitar novamente!')
+        while mes<1 or mes>12:
+            mes=int(input('digite o mes que essa temp ocorreu: '))
+    
     ano=int(input('digite o ano que ocorreu: '))
     cont=cont+1
    
