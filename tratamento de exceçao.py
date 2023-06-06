@@ -97,10 +97,10 @@ while True:
                 print('CADASTRO DE AVIÃO')
                 print('')
                 modelo=(input('Modelo do avião: '))
-                ano=int(input('Ano: '))
+                ano=(input('Ano: '))
                 cor=(input('cor do avião: '))
-                horas=int(input('Horas de voo: '))
-                capacitade=int('Capacidade de passageiros:')
+                horas=(input('Horas de voo: '))
+                capacitade=(input('Capacidade de passageiros: '))
             except ValueError:
                 print('digito inválido')
                 continue
