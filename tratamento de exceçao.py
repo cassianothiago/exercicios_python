@@ -30,12 +30,15 @@ while True:
                 print('erro desconhecido')
                 continue
             else:
-                lista_cc.append(nome,sobrenome,rg,cpf,endereço,fone,idade)
-                os.system('pause')
-                os.system('cls')
-                #break
-        os.system('pause')
-        os.system('cls')
+                lista_cc.append(nome)
+                lista_cc.append(sobrenome)
+                lista_cc.append(rg)
+                lista_cc.append(cpf)
+                lista_cc.append(endereço)
+                lista_cc.append(fone)
+                lista_cc.append(idade)
+                break
+
     elif a=='2':
         while True:
             try:
@@ -55,8 +58,13 @@ while True:
                 print('erro desconhecido')
                 continue
             else:
-                lista_cp.append(destino,origem,duracao,valor,desconto)
+                lista_cp.append(destino)
+                lista_cp.append(origem)
+                lista_cp.append(duracao)
+                lista_cp.append(valor)
+                lista_cp.append(desconto)
                 break
+
     elif a=='3':
         while True:
             try:
@@ -75,7 +83,12 @@ while True:
                 print('erro desconhecido')
                 continue
             else:
-                lista_ct.append(nomet,cargo,idadet,admissao,fonet)
+                lista_ct.append(nomet)
+                lista_ct.append(cargo)
+                lista_ct.append(idadet)
+                lista_ct.append(admissao)
+                lista_ct.append(fonet)
+                break
 
     elif a=='4':
         while True:
@@ -95,15 +108,21 @@ while True:
                 print('erro desconhecido')
                 continue
             else:
-                lista_ca(modelo,ano,cor,horas,capacitade)
+                lista_ca.append(modelo)
+                lista_ca.append(ano)
+                lista_ca.append(cor)
+                lista_ca.append(horas)
+                lista_ca.append(capacitade)
                 break
+
     elif a=='0':
         break
+
     elif a=='5':
-            print(lista_cc)
-            print(lista_cp)
-            print(lista_ct)
-            print(lista_ca)
+            print(*lista_cc,sep='\n')
+            print(*lista_cp,sep='\n')
+            print(*lista_ct,sep='\n')
+            print(lista_ca,sep='\n')
 os.system('pause')
 os.system('cls')
 
