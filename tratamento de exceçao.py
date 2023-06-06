@@ -9,7 +9,9 @@ lista_cp=[]
 lista_ct=[]
 lista_ca=[]
 while True:
+    print('')
     a=(input('Digite \n(1) para cadastro de cliente\n(2) para cadastro de passagem\n(3) para cadastro de tripulação\n(4) cadastro de avião\n(5) relatorio\n(0) para sair\n:  '))
+    print('')
     if a=='1':
         while True:
             try:
