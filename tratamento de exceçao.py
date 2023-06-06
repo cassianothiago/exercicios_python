@@ -122,7 +122,7 @@ while True:
             print(*lista_cc,sep='\n')
             print(*lista_cp,sep='\n')
             print(*lista_ct,sep='\n')
-            print(lista_ca,sep='\n')
+            print(*lista_ca,sep='\n')
 os.system('pause')
 os.system('cls')
 
