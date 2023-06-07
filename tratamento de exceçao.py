@@ -1,7 +1,7 @@
 import os
 print('='*120)
 
-print('========cadastro aeroporto======')
+print('========Cadastro Aeroporto======')
 print('')
 
 lista_cc=[]
