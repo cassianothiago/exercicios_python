@@ -5,17 +5,21 @@ def valorpagamento(valor,dias):
 
 
 print('caixa')
-listprest=[]
-listdias=[]
+dic={}
+listaprest=[]
+listaatraso=[]
 listpag=[]
-prest=float(input('Digite o valor da prestação: '))
-listprest.append(prest)
-atraso=int(input('Digite os dias de atraso ou zero se estiver em dia: '))
-if atraso>0:
-    listdias.append(atraso)
-    x=valorpagamento(prest,atraso)
-    listpag.append(x)
-print(listprest)
-print(listdias)
-print(listpag)
+while True:
+    prest=float(input('Digite o valor da prestação ou zero pra sair e imprimir: '))
+    listaprest.append(prest)
+    if prest==0:
+        break
+    atraso=int(input('Digite os dias de atraso ou zero se estiver em dia: '))
+    listaatraso.append(atraso)
+    if atraso>0:
+        pag=valorpagamento(prest,atraso)
+        listpag.append(pag)
+    dic={'prestação':listaprest,'atraso de ':listaatraso,'valor total':listpag}
+print(dic)
+  
 
