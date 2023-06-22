@@ -1,9 +1,30 @@
-produto=input("digite o nome do produto ")
-valor_unitario=float(input("digite o valor unitario: "))
-quantidade=int(input("digite a quantidade comprada: "))
-desconto=float(input("digite o valor do desconto em porcentagem: "))
-valor_final=float(quantidade*valor_unitario)
-valor_desconto=(valor_final-(valor_final*desconto/100))
-print(50*"-")
-print(produto)
-print("total da compra = ",valor_desconto)
+def valorpagamneto():
+    listvalor=[]
+    listdias=[]
+    listapag=[]
+    valor=float(input('Digite o valor da prestação: '))
+    listapag.append(valor)
+    dias=int(input('Digite quantos dias está atrasado, se estiver na data digite zero: '))
+    listdias.append(dias)
+    if dias>0:
+        pagamneto=valor+(valor*0.03+dias*0.001)
+        listvalor.append(pagamneto)
+    print(listvalor)
+    print(listdias)
+    print(listapag)
+    
+
+
+
+
+print('caixa de pagamento')
+while True:
+    prest=float(input('Digite o valor da prestação: '))
+    atraso=int(input('Digite quantos dias está atrasado, se estiver na data digite zero: '))
+    valorpagamneto()
+    
+
+    
+
+
+
