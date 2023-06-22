@@ -1,6 +1,6 @@
 
 def valorpagamento(valor,dias):
-    pagamento=valor+(valor*0.03+dias*0.001)
+    pagamento=valor+(valor*0.03+dias*0.001*valor)
     return pagamento
 
 
@@ -19,7 +19,7 @@ while True:
     if atraso>0:
         pag=valorpagamento(prest,atraso)
         listpag.append(pag)
+    elif atraso==0:
+        listpag.append(prest)
     dic={'prestação':listaprest,'atraso de ':listaatraso,'valor total':listpag}
 print(dic)
-  
-
