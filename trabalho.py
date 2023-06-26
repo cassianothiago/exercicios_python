@@ -1,13 +1,16 @@
-import termcolor
-from termcolor import colored
-print(colored('olá','yellow'),colored("mundo","green"))
 
-'''import sys
+import sys
+import termcolor
 
 from termcolor import colored, cprint
 
-text = colored("Hello, World!", "red", attrs=["reverse", "blink"])
+#ttext = colored("Hello, World!", "red", attrs=["reverse", "blink"])
+text = colored("Hello, World!")
+
 print(text)
+cprint("Hello, World!", "green", "on_red")
+
+'''
 cprint("Hello, World!", "green", "on_red")
 
 print_red_on_cyan = lambda x: cprint(x, "red", "on_cyan")
