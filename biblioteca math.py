@@ -31,4 +31,7 @@ import datetime as dt
 print(dt.date.today())
 
 print(dt.date.today().strftime(' hoje é %d/%m/%Y'))
-print(dt.date.today().strftime(' hoje é {}/{}/{}'.format(d,m,Y)))
+
+print(dt.datetime.now())
+while True:
+    print(dt.datetime.now().strftime('%d/%m/%Y%H:%M:%S'))
