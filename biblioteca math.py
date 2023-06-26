@@ -11,3 +11,10 @@ print(math.fabs(y))
 z=5
 math.factorial(z)
 print(math.factorial(z))
+
+w=3.5
+math.floor(w)
+print(math.floor(w))
+
+r=9
+print(math.isqrt(r))
