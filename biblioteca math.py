@@ -18,3 +18,7 @@ print(math.floor(w))
 
 r=9
 print(math.isqrt(r))
+
+f=2
+n=10
+print(math.pow(f,n))
