@@ -3,6 +3,10 @@
 listacliente=[]
 listaprest=[]
 listdias=[]
+print('='*120)
+print('-----')
+inicial=float(input('Bem vindo ao caixa!!\n Qual seu saldo inicial:  '))
+
 while True:
     cliente=input('digite o nome do cliente ou S para sair: ')
     if cliente=='s' or cliente=='S':
@@ -22,16 +26,19 @@ for i in range(len(listacliente)):
         print('-----')
         print('cliente:',listacliente[i],'\nprestação:',listaprest[i],'\natraso:',listdias[i])
 print('-----')
-print('total dos cliente:',sum(listaprest))
+prestsoma=sum(listaprest)
+print('total dos cliente: {:.2f}'.format(prestsoma))
 while True:
-     flog=input('imprimir o flog do cliente digite seu nome ou E para encerrar: ')
+     flog=input('imprimir o flog do cliente? digite seu nome! ou E para encerrar e ver saldo de caixa: ')
      if flog=='E' or flog=='e':
+          saldofinal=inicial-sum(listaprest)
+          print('Saldo em caixa = {:.2f}'.format(saldofinal))
           break
      else:
         a=listacliente.index(flog)
         print('-----')
         print('cliente:',listacliente[a],'\nprestação:',listaprest[a],'\natraso',listdias[a])
-
+print('='*120)
 
              
     
