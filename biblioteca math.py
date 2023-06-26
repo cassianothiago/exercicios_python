@@ -1,4 +1,5 @@
 import math
+import datetime
 x=3.5
 
 math.ceil(x)
@@ -22,3 +23,10 @@ print(math.isqrt(r))
 f=2
 n=10
 print(math.pow(f,n))
+
+
+print(datetime.date.today())
+
+import datetime as dt
+print(dt.date.today())
+
