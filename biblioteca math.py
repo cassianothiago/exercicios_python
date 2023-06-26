@@ -1,5 +1,7 @@
 import math
 import datetime
+import time
+
 x=3.5
 
 math.ceil(x)
@@ -33,5 +35,13 @@ print(dt.date.today())
 print(dt.date.today().strftime(' hoje é %d/%m/%Y'))
 
 print(dt.datetime.now())
-while True:
-    print(dt.datetime.now().strftime('%d/%m/%Y%H:%M:%S'))
+print(dt.datetime.now().strftime('%d/%m/%Y%H:%M:%S'))
+
+cont=0
+j=time.perf_counter()
+while cont<10:
+    print(j)
+    cont=cont+1
+k=time.perf_counter()
+print(k-j)
+
