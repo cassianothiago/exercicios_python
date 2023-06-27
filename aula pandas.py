@@ -7,7 +7,14 @@ tabela_vendas=pd.DataFrame(venda)
 print('-----')
 print(tabela_vendas)
 print('-----')'''
-tabela_vendas=pd.read_excel('Vendas.xlsx')
-print(tabela_vendas)
+tabela_vendas=pd.read_excel("Vendas.xlsx")
+#print(tabela_vendas)
+#print(tabela_vendas.head(10))
+#print(tabela_vendas.shape)
+#print(tabela_vendas.describe())
+#produtos=tabela_vendas[['Produto','ID Loja']]
+#print(produtos.head())
+print(tabela_vendas.loc[1:5])
+
 
 
