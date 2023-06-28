@@ -18,9 +18,8 @@ listpag=[]
 listacliente=[]
 listdias=[]
 
-try:
-    inicial=(input('Bem vindo ao caixa!!\nsaldo inicial: '))
-    while True:
+inicial=(input('Bem vindo ao caixa!!\nsaldo inicial: '))
+while True:
         cliente=input('Digite o nome do cliente ou E para encerrar e consulta flog: ')
         if cliente=='e' or cliente=='E':
             break
@@ -62,13 +61,13 @@ try:
         print('Saldo em caixa dessa operação = {:.2f}'.format(troco1))
         
         print('='*120)
-    for i in range(len(listacliente)):
+for i in range(len(listacliente)):
         print('-----')
         print('cliente:',listacliente[i],'\nprestação:',listaprest[i],'\natraso:',listdias[i])
-    print('-----')
-    prestsoma=sum(listaprest)
-    print('total dos cliente: {:.2f}'.format(prestsoma))
-    while True:
+print('-----')
+prestsoma=sum(listaprest)
+print('total dos cliente: {:.2f}'.format(prestsoma))
+while True:
         flog=input('imprimir o flog do cliente? digite seu nome! ou E para encerrar e ver saldo de caixa: ')
         if flog=='E' or flog=='e':
           saldofinal=inicial-prestsoma
@@ -78,11 +77,5 @@ try:
             a=listacliente.index(flog)
             print('-----')
             print('cliente:',listacliente[a],'\nprestação:',listaprest[a],'\natraso',listdias[a])
-    print('='*120)
+print('='*120)
     
-except ValueError:
-    print('valor digitado invalido')
-except ZeroDivisionError:
-    print('operação invalida div 0')
-except:
-    print('erro disconhecido')
