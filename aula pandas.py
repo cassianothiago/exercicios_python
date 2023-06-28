@@ -5,7 +5,7 @@ import pandas as pd
 print(venda)
 tabela_vendas=pd.DataFrame(venda)
 print(tabela_vendas)'''
-tabela_vendas=pd.read_excel("Vendas.xlsx")
+#tabela_vendas=pd.read_excel("Vendas.xlsx")
 #print(tabela_vendas)
 #print(tabela_vendas.head())
 #print(tabela_vendas.shape)
@@ -16,9 +16,9 @@ tabela_vendas=pd.read_excel("Vendas.xlsx")
 #print(tabela_vendas.loc[tabela_vendas['ID Loja']=='Norte Shopping'])
 #vendas_NorteShopping=tabela_vendas.loc[tabela_vendas['ID Loja']=='Norte Shopping']
 #print(vendas_NorteShopping.head(1))
-vendas_NorteShopping=tabela_vendas.loc[tabela_vendas['ID Loja']=='Norte Shopping',['Produto','Quantidade']]
-print(vendas_NorteShopping)
-print(tabela_vendas.loc[4,'Produto'])
+#vendas_NorteShopping=tabela_vendas.loc[tabela_vendas['ID Loja']=='Norte Shopping',['Produto','Quantidade']]
+#print(vendas_NorteShopping)
+#print(tabela_vendas.loc[4,'Produto'])
 
 
 
