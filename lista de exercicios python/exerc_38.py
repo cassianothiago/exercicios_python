@@ -39,6 +39,6 @@ print('Menor Peso = ',magro)
 print('Média altura = {:.2f}'.format(me_altura))
 print('Média Peso = {:.2f}'.format(me_peso))
 
-consulta=int('Digite o código do cliente para consultar seus dados: ')
+consulta=int(input('Digite o código do cliente para consultar seus dados: '))
 for i in range(listcliente[consulta]):
     print('Cliente: ',listcliente[i],'\nSua altura: ',listaltura[i],'\nSeu peso: ',listpeso[i])
