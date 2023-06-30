@@ -13,6 +13,7 @@ listpeso=[]
 listnome=[]
 listsexo=[]
 cont=0
+print('-----')
 while True:
     cont=cont+1
     cliente=int(input('Digite o código do cliente: '))
@@ -25,8 +26,9 @@ while True:
     listaltura.append(altura)
     peso=int(input('Digite seu peso: '))
     listpeso.append(peso)
-    
+    print('-----')
     a=input('Cadastrar proximo cliente tecle enter!. Ou zero para encerrar: ')
+    print('-----')
     if a=='0':
         break
     else: 
@@ -39,13 +41,14 @@ sum_altura=sum(listaltura)
 sum_peso=sum(listpeso)
 me_altura=sum_altura/cont
 me_peso=float(sum_peso/cont)
+print('-----')
 print('Altura maxima = {:.2f}'.format(alto))
 print('Altura minima= {:.2f}'.format(baixo))
 print('Maior Peso = ',gordo)
 print('Menor Peso = ',magro)
 print('Média altura = {:.2f}'.format(me_altura))
 print('Média Peso = {:.2f}'.format(me_peso))
-
+print('-----')
 arquivo={'Cód.cliente':listcliente,'Nome':listnome,'Altura':listaltura,'Peso':listpeso}
 tabela=pd.DataFrame(arquivo)
 print(tabela)
@@ -55,4 +58,5 @@ while True:
     if consulta==0:
         break
     else:
+        print('-----')
         print(tabela.loc[tabela['Cód.cliente']==consulta])
