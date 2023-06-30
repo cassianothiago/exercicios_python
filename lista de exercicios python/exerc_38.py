@@ -5,6 +5,7 @@ Ao encerrar o programa também deve ser informados os códigos e valores do clen
 do mais baixo, do mais gordo e do mais magro,
 além da média das alturas e dos pesos dos clientes'''
 
+import os
 import pandas as pd
 
 listcliente=[]
@@ -60,3 +61,5 @@ while True:
     else:
         print('-----')
         print(tabela.loc[tabela['Cód.cliente']==consulta])
+os.system('pause')
+os.system('cls')
