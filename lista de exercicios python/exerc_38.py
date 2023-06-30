@@ -5,21 +5,28 @@ Ao encerrar o programa também deve ser informados os códigos e valores do clen
 do mais baixo, do mais gordo e do mais magro,
 além da média das alturas e dos pesos dos clientes'''
 
+import pandas as pd
 
 listcliente=[]
 listaltura=[]
 listpeso=[]
+listnome=[]
+listsexo=[]
 cont=0
 while True:
     cont=cont+1
-    cliente=input('Digite seu código: ')
+    cliente=int(input('Digite o código do cliente: '))
+    nome=input('Nome do cliente: ')
+    listnome.append(nome)
+    sexo=input('Sexo do cliente: ')
+    listsexo.append(sexo)
     listcliente.append(cliente)
     altura=float(input('Digite sua altura: '))
     listaltura.append(altura)
     peso=int(input('Digite seu peso: '))
     listpeso.append(peso)
     
-    a=input('Digite o código do próximo cliente e tecle enter!. Ou zero para encerrar: ')
+    a=input('Cadastrar proximo cliente tecle enter!. Ou zero para encerrar: ')
     if a=='0':
         break
     else: 
@@ -39,6 +46,13 @@ print('Menor Peso = ',magro)
 print('Média altura = {:.2f}'.format(me_altura))
 print('Média Peso = {:.2f}'.format(me_peso))
 
-consulta=int(input('Digite o código do cliente para consultar seus dados: '))
-for i in range(listcliente[consulta]):
-    print('Cliente: ',listcliente[i],'\nSua altura: ',listaltura[i],'\nSeu peso: ',listpeso[i])
+arquivo={'Cód.cliente':listcliente,'Nome':listnome,'Altura':listaltura,'Peso':listpeso}
+tabela=pd.DataFrame(arquivo)
+print(tabela)
+while True: 
+    
+    consulta=int(input('consultar aluno? Digite seu código ou zero(0) para encerrar:  '))
+    if consulta==0:
+        break
+    else:
+        print(tabela.loc[tabela['Cód.cliente']==consulta])
