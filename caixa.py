@@ -7,10 +7,10 @@ print('-----')
 inicial=float(input('Digite o valor de abertura do caixa: '))
 cont=0
 cont2=0
-list_cliente=[].pop(-1)
-list_conta=[].pop(-1)
-list_atraso=[].pop(-1)
-list_pagamento=[].pop(-1)
+list_cliente=[]
+list_conta=[]
+list_atraso=[]
+list_valor=[]
 
 while True:
     list_valor=[]
@@ -18,6 +18,7 @@ while True:
     cliente=(input('Nome do {}ª cliente ou zero para encerrar: '.format(cont)))
     list_cliente.append(cliente)
     if cliente=='0':
+        list_cliente.pop(-1)
         break
     while True:
         cont2=cont2+1
@@ -25,6 +26,7 @@ while True:
         list_conta.append(conta)
         if conta==0:
             cont2=0
+            list_conta.pop(-1)
             break
         atraso=int(input('A {}ª conta do cliente {} esta atrasada? quantos dias?(se nenhum digite zero): '.format(cont2,cliente)))
         list_atraso.append(atraso)
@@ -36,8 +38,9 @@ while True:
         else:
             valor=conta
             list_valor.append(valor)
+            list_atraso.pop(-1)
         pagamento=sum(list_valor)
-        list_pagamento.append(pagamento)
+        list_valor.append(pagamento)
         print('Valor para pagamento do cliente {} = {:.2f}'.format(cliente,pagamento))
     dinheiro=float(input('Valor entregue pelo cliente: '))
     troco=dinheiro-pagamento
@@ -52,12 +55,14 @@ while True:
             troco=retorno_nota
         elif retorno_nota<0:
             print('Valor retornado a maior: ',retorno_nota)
-while True: 
+while True:
+
     flog=(input('Imprimir todo o flog digite I ou específico digite o nome do cliente ou zero para encerrar: '))
     if flog=='0':
         break
     if flog=='i' or flog=='I':
-        imprimir_flog={'Cliente':[list_cliente],'Conta':[list_conta],'Atraso':[list_atraso],'Valor':[list_pagamento]}
+        
+        imprimir_flog={'Cliente':[list_cliente],'Conta':[list_conta],'Atraso':[list_atraso],'Valor':[list_valor]}
         tabela_flog=pd.DataFrame(imprimir_flog)
         print(tabela_flog)
         
