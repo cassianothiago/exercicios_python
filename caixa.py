@@ -7,10 +7,11 @@ print('-----')
 inicial=float(input('Digite o valor de abertura do caixa: '))
 cont=0
 cont2=0
-list_cliente=[]
-list_conta=[]
-list_atraso=[]
-list_pagamento=[]
+list_cliente=[].pop(-1)
+list_conta=[].pop(-1)
+list_atraso=[].pop(-1)
+list_pagamento=[].pop(-1)
+
 while True:
     list_valor=[]
     cont=cont+1
@@ -56,7 +57,7 @@ while True:
     if flog=='0':
         break
     if flog=='i' or flog=='I':
-        imprimir_flog={'Cliente':(list_cliente),'Conta':(list_conta),'Atraso':(list_atraso),'Valor':(list_pagamento)}
+        imprimir_flog={'Cliente':[list_cliente],'Conta':[list_conta],'Atraso':[list_atraso],'Valor':[list_pagamento]}
         tabela_flog=pd.DataFrame(imprimir_flog)
         print(tabela_flog)
         
