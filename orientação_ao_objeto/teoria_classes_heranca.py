@@ -22,4 +22,14 @@ class Aluno(Pessoa):
         super().relatorio()
         print('Mensalidade = ',self.mensalidade)
         print('-----')
-    
+
+class Professor(Pessoa):
+    def __init__(self, salario, nome, idade, endereco, cidade, estado):
+        super().__init__(nome, idade, endereco, cidade, estado)
+        self.salario=salario
+        print('-----')
+        print('Bem-vindo Professor')
+        super().relatorio()
+        print('salario = ',self.salario)
+        print('-----')
+        
