@@ -2,16 +2,20 @@ from contaBco import*
 from os import system
 
 print('-----')
+print('abertura de conta')
 nome=input('Digite seu nome: ')
 saldo=0
 cpf=int(input('digite seu cpf:  '))
 senha=int(input('Digite uma senha de quatros numeros: '))
+print('----')
+print('conta cadastrada')
 print('---')
 contabco=Banco(nome,saldo,cpf,senha)
-
+system('pause')
+system('cls')
 while True:
     print('-----')
-    menu=int(input('Digite 1 para deposito - 2 para extrato - 3 para saque - zero para encerrar: '))
+    menu=int(input('1 para deposito\n2 para extrato\n3 para saque\nzero para encerrar: '))
     print('-----')
     if menu==1:
         print('Depositar\n-----')
