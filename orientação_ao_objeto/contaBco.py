@@ -1,5 +1,5 @@
 class Banco():
-    def __init__(self,nome,saldo:float,cpf,senha):
+    def __init__(self,nome,saldo,cpf,senha):
         self.nome=nome
         self.__saldo=saldo
         self.__cpf=cpf
