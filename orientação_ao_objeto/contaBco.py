@@ -9,13 +9,20 @@ class Banco():
         if senha!=self.__senha:
             print('Senha inválida')
         else:
-            print(self.__saldo)
+            print('saldo = ',self.__saldo)
 
     def depositar(self,dep):
         self.__saldo+=dep
+        print('saldo = ',self.__saldo)
 
-
-
+    def saque(self,senha,sacar):
+        if senha!=self.__senha:
+            print('senha inválida')
+        else:
+            self.__saldo-=sacar
+            print('saldo= ',self.__saldo)
+            
+            
 
     
 
