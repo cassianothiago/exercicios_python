@@ -16,7 +16,7 @@ while True:
         system('pause')
         system('cls')
     except ValueError:
-        print('Dados invalidos!! tente novamente ')
+        print('Dados invalidos!! Digite novamente ')
         
     except:
         print('Dados invalidos!! Digite novamente')
@@ -29,6 +29,7 @@ while True:
         system('cls')
         print('Cargo que o funcionario {} irá exercer?..'.format(nome))
         menu=input('Digite\n1 para Diretor\n2 para Gerente\n3 Assistente\n4 para estagiario\nE 0(zero) para encerrar\n:.')
+        print('-----')
         if menu=='0':
             break
         if menu=='1':
@@ -56,7 +57,7 @@ while True:
             system('pause')
             system('cls')
         else:
-            print('Opção inválida!! digite novamente')
+            print('Opção inválida!!. Cadastro apagado!! Digite novamente.:')
             system('pause')
             system('cls')
 
