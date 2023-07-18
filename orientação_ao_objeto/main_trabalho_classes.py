@@ -9,6 +9,7 @@ while True:
         nome=input('Digite o nome do funcionário ou 0(zero) para colher assinatura = ')
         list_nome.append(nome)
         if nome=='0':
+            system('cls')
             break
         cpf=int(input('Digite seu CPF = '))
         nascimento=input('Digite seu nascimento = ')
@@ -31,32 +32,32 @@ while True:
         system('cls')
         print('Cargo que o funcionario {} irá exercer?..'.format(nome))
         print('-----')
-        menu=input('Digite\n1 para Diretor\n2 para Gerente\n3 Assistente\n4 para estagiario\n0(zero) para sair\n:.')
+        menu=input('Digite\n1 para Diretor\n2 para Gerente\n3 Assistente\n4 para estagiario\n:.')
         print('-----')
         if menu=='0':
             break
         if menu=='1':
             cadastro=Diretor(nome,cpf,nascimento,endereco,tel,email)
             cadastro.salario()
-            print('cadastro Efetuado com sucesso')
+            print('cadastro salarial Efetuado com sucesso')
             system('pause')
             system('cls')
         elif menu=='2':
             cadastro=Gerente(nome,cpf,nascimento,endereco,tel,email)
             cadastro.salario()
-            print('cadastro Efetuado com sucesso')
+            print('cadastro salarial Efetuado com sucesso')
             system('pause')
             system('cls')
         elif menu=='3':
             cadastro=Assistente(nome,cpf,nascimento,endereco,tel,email)
             cadastro.salario()
-            print('cadastro Efetuado com sucesso')
+            print('cadastro salarial Efetuado com sucesso')
             system('pause')
             system('cls')
         elif menu=='4':
             cadastro=Estagiario(nome,cpf,nascimento,endereco,tel,email)
             cadastro.salario()
-            print('cadastro Efetuado com sucesso')
+            print('cadastro salarial Efetuado com sucesso')
             system('pause')
             system('cls')
         else:
@@ -65,19 +66,25 @@ while True:
             system('cls')
 while True:
     try:
+        print('-----')
         imprimir=input('Digite o nome do funcionario para envio do documento:  ')
+        system('cls')
     except ValueError:
         print('Digite apenas o nome do funcionario!!')
     except:
         print('Erro de relatorio')
     else:
-        if :
+        if imprimir in list_nome:
             index=list_nome.index(imprimir)
-            impr=Imprimir(index,cpf,nascimento,endereco,tel,email)
+            impr=Imprimir(list_nome[index],cpf,nascimento,endereco,tel,email)
+            print('Parabéns vc é o nosso novo funcionario')
+            print('Assianr o documento e entregar no RH')
+            print('OBS:. Qualquer divergecia de informação neste documento tratar pessoalmente com RH')
             impr.imprimir()
             print('Enviando para email do funcionario:/{}/........'.format(email))
             system('pause')
             print('email enviado para assinatura')
+            system('pause')
             system('cls')
             break
         else:
