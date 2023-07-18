@@ -3,9 +3,11 @@ from os import system
 print('-----')
 print('Bem vindo ao cadastro do RH')
 print('-----')
+list_nome=[]
 while True:
     try:
-        nome=input('Digite o nome do funcionário ou 0(zero) para sair = ')
+        nome=input('Digite o nome do funcionário ou 0(zero) para colher assinatura = ')
+        list_nome.append(nome)
         if nome=='0':
             break
         cpf=int(input('Digite seu CPF = '))
@@ -29,7 +31,7 @@ while True:
         system('cls')
         print('Cargo que o funcionario {} irá exercer?..'.format(nome))
         print('-----')
-        menu=input('Digite\n1 para Diretor\n2 para Gerente\n3 Assistente\n4 para estagiario\nE 0(zero) para encerrar\n:.')
+        menu=input('Digite\n1 para Diretor\n2 para Gerente\n3 Assistente\n4 para estagiario\n0(zero) para sair\n:.')
         print('-----')
         if menu=='0':
             break
@@ -61,5 +63,24 @@ while True:
             print('Opção inválida!!. Cadastro apagado!! Digite novamente.:')
             system('pause')
             system('cls')
-
+while True:
+    try:
+        imprimir=input('Digite o nome do funcionario para envio do documento:  ')
+    except ValueError:
+        print('Digite apenas o nome do funcionario!!')
+    except:
+        print('Erro de relatorio')
+    else:
+        if :
+            index=list_nome.index(imprimir)
+            impr=Imprimir(index,cpf,nascimento,endereco,tel,email)
+            impr.imprimir()
+            print('Enviando para email do funcionario:/{}/........'.format(email))
+            system('pause')
+            print('email enviado para assinatura')
+            system('cls')
+            break
+        else:
+            print('Funcionario não encontrado')
+        
     

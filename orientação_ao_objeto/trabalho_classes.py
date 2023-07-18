@@ -39,4 +39,14 @@ class Estagiario(Assistente):
         self.salario=1000
         print('Salario Base funcionario = R$ 1000\nSalario Base Estagiario = ',self.salario+100)
 
-
+class Imprimir(Funcionario):
+    def __init__(self, nome, cpf, nascimento, endereco, telefone, email):
+        super().__init__(nome, cpf, nascimento, endereco, telefone, email)
+    def imprimir(self):
+        print('Nome: ',self.nome)
+        print('Nascimento: ',self.nascimento)
+        print('Telefone:  ',self.telefone)
+        print('Email: ',self.email)
+        print(5*'\n')
+        print('Assin:_____________________________________________')
+        print('                         {}'.format(self.nome))
