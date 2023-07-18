@@ -7,7 +7,7 @@ list_nome=[]
 print('')
 while True:
     try:
-        nome=input('Digite o nome do funcionário ou 0(zero) para colher assinatura = ')
+        nome=input('Digite o nome do funcionário\n0(zero) para colher assinatura e o fechar sistema\n= ')
         list_nome.append(nome)
         if nome=='0':
             system('cls')
@@ -21,9 +21,13 @@ while True:
         system('cls')
     except ValueError:
         print('Dados invalidos!! Digite novamente ')
+        system('pause')
+        system('cls')
         
     except:
         print('Dados invalidos!! Digite novamente')
+        system('pause')
+        system('cls')
     else:
     
         print('----')
@@ -40,31 +44,40 @@ while True:
         if menu=='1':
             cadastro=Diretor(nome,cpf,nascimento,endereco,tel,email)
             cadastro.salario()
+            print('-----')
             print('cadastro salarial Efetuado com sucesso')
+            print('-----')
             system('pause')
             system('cls')
         elif menu=='2':
             cadastro=Gerente(nome,cpf,nascimento,endereco,tel,email)
             cadastro.salario()
+            print('-----')
             print('cadastro salarial Efetuado com sucesso')
+            print('-----')
             system('pause')
             system('cls')
         elif menu=='3':
             cadastro=Assistente(nome,cpf,nascimento,endereco,tel,email)
             cadastro.salario()
+            print('-----')
             print('cadastro salarial Efetuado com sucesso')
+            print('-----')
             system('pause')
             system('cls')
         elif menu=='4':
             cadastro=Estagiario(nome,cpf,nascimento,endereco,tel,email)
             cadastro.salario()
+            print('-----')
             print('cadastro salarial Efetuado com sucesso')
+            print('-----')
             system('pause')
             system('cls')
         else:
             print('Opção inválida!!. Cadastro apagado!! Digite novamente.:')
             system('pause')
             system('cls')
+            continue
 while True:
     try:
         print('-----')
@@ -76,15 +89,16 @@ while True:
         print('Erro de relatorio')
     else:
         if imprimir in list_nome:
-            index=list_nome.index(imprimir)
-            impr=Imprimir(list_nome[index],cpf,nascimento,endereco,tel,email)
+            encontrei=list_nome.index(imprimir)
+            impr=Imprimir(list_nome[encontrei],cpf,nascimento,endereco,tel,email)
             print('Parabéns vc é o nosso novo funcionario')
             print('Assianr o documento e entregar no RH')
             print('OBS:. Qualquer divergecia de informação neste documento tratar pessoalmente com RH')
+            print('------')
             impr.imprimir()
             print('Enviando para email do funcionario:/{}/........'.format(email))
             system('pause')
-            print('email enviado para assinatura')
+            print('email enviado com sucesso')
             system('pause')
             system('cls')
             break
