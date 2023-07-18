@@ -4,6 +4,7 @@ print('-----')
 print('Bem vindo ao cadastro do RH')
 print('-----')
 list_nome=[]
+print('')
 while True:
     try:
         nome=input('Digite o nome do funcionário ou 0(zero) para colher assinatura = ')
