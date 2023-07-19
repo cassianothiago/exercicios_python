@@ -6,7 +6,7 @@ Faça um programa que determine o salário atual desse funcionário.
 Após concluir isto, altere o programa permitindo que o usuário digite o salário inicial do funcionário'''
 
 
-salario_inicial_95=1000
+'''salario_inicial_95=1000
 aumento_96=0.000015
 aumento=salario_inicial_95+(salario_inicial_95*0.015)
 print(aumento_96)
@@ -20,5 +20,27 @@ for i in range(26):
     print('-----')
     print(aumento_96)
     print('salario = {:.2f}'.format(novo_aumento))
-    print('------')
+    print('------')'''
 
+
+class Salario_97():
+    def __init__(self,aumento,salario):
+        self.salario=salario
+        self.aumento=aumento
+        
+    def n_salario(self,salario,aumento):
+        self.aumento=aumento
+        self.salario=salario
+        for i in range(26):
+            n_aumento=aumento*2
+            n_salario=salario+(salario*n_aumento)
+            aumento=n_aumento
+            salario=n_salario
+            print('-----')
+            print('Aumento em {} = {:.2f}'.format(1997+(i+1),n_aumento))
+            print('Novo salario em {} = {:.2f}'.format(1997+(i+1),n_salario))
+            
+
+
+
+        
