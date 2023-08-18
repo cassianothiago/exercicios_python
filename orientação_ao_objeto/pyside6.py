@@ -1,7 +1,7 @@
 import typing
-import PySide2.QtCore
-from PySide2.QtWidgets import QApplication, QWidget, QPushButton, QMainWindow, QLabel
-from PySide2.QtCore import QSize, Qt
+import PySide6.QtCore
+from PySide6.QtWidgets import QApplication, QWidget, QPushButton, QMainWindow, QLabel
+from PySide6.QtCore import QSize, Qt
 import sys
 
 '''class MainWindow(QMainWindow):
